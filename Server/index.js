@@ -41,7 +41,7 @@ app.use(cookieParser());
 //To allow backend to entertain req from frontend
 app.use(
   cors({
-    origin: ["https://brainnet-api.onrender.com/", "http://localhost:3000", "https://brainnet.onrender.com/"],
+    origin: ["https://brainnet-api.onrender.com", "http://localhost:3000", "https://brainnet.onrender.com"],
     credentials: true,
   })
 );
