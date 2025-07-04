@@ -2,9 +2,6 @@
 const express = require("express");
 const app = express();
 require("mongoose")
-const cors = require("cors");
-
-
 //Routes import
 const userRoutes = require("./routes/User");
 const profileRoutes = require("./routes/Profile");
