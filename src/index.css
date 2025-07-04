@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optionally: add custom base styles */
+body {
+    font-family: theme('fontFamily.inter');
+    /* Optional default font */
+}

@@ -32,7 +32,7 @@ package-lock.json
 **/package-lock.json
 
 # Compiled Tailwind (optional if using CLI)
-*.css
+# *.css
 
 # Ignore local debug config
 *.local
