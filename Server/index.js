@@ -41,7 +41,7 @@ app.use(cookieParser());
 //To allow backend to entertain req from frontend
 app.use(
   cors({
-    origin: ["https://study-notion-seven-nu.vercel.app", "http://localhost:3000"],
+    origin: ["https://brainnet-api.onrender.com/", "http://localhost:3000"],
     credentials: true,
   })
 );
