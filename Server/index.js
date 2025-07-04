@@ -24,11 +24,6 @@ dotenv.config();
 //PORT NO
 const PORT = process.env.PORT || 4000;
 
-
-const allowedOrigins = [
-  "http://localhost:3000",             // Dev
-  "https://brainnet.onrender.com",     // ✅ Your current frontend
-];
 //databaseconnect
 database.connect();
 
@@ -46,13 +41,7 @@ app.use(cookieParser());
 //To allow backend to entertain req from frontend
 app.use(
   cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS: " + origin));
-      }
-    },
+    origin: ["http://localhost:3000", "https://brainnet.onrender.com/"],
     credentials: true,
   })
 );
