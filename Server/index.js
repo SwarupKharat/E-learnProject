@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 require("mongoose")
-
+const cors = require("cors");
 
 
 //Routes import
@@ -41,7 +41,7 @@ app.use(cookieParser());
 //To allow backend to entertain req from frontend
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://brainnet.onrender.com/"],
+    origin: ["http://localhost:3000", "https://brainnet.onrender.com"], // ✅ Fixed
     credentials: true,
   })
 );
