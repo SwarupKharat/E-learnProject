@@ -12,7 +12,7 @@ export default function ConfirmationModal({ modalData }) {
         </p>
         <div className="flex items-center gap-x-4">
           <IconBtn
-          customClasses="bg-yellow-100 text-black rounded-md px-4 py-2 font-semibold "
+            customClasses="bg-yellow-100 text-black rounded-md px-4 py-2 font-semibold "
             onclick={modalData?.btn1Handler}
             text={modalData?.btn1Text}
           />
